@@ -1,3 +1,5 @@
+# Using fzf to make common git commands and workflows for interactive
+
 git_switch_interactive() {
   local branch
   branch=$(
@@ -15,3 +17,13 @@ git_switch_interactive() {
     return 1
   fi
 }
+
+# Create function for git stash
+# ctl-y yanks select stash name
+# ctl-l inspects the stash
+# clt-d drop (maybe a confirmation popup?)
+
+# Create function for git add
+# ctl-l inspect (like normal)
+# ctl-shift-p add with -p (I will need to refresh list after this)
+# multi select where all selected get added
